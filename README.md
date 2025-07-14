@@ -35,21 +35,18 @@ Métricas: F1-Score, Especificidad, Sensibilidad, MCC
 PDF: pdfkit + wkhtmltopdf
 
 📁 Estructura del Proyecto
-bash
-Copiar
-Editar
-📦 App_Diagnostico_Enfermades_Papa
-├── app.py                  # Aplicación principal Streamlit
-├── models/                 # Modelos .h5 entrenados
-│   ├── best_potato_model.h5
-│   ├── potatocnn_model.h5
-│   └── resnet50_model.h5
-├── data/                   # Datos de prueba y predicciones .npy
-│   ├── X_test.npy
-│   ├── y_test.npy
-│   └── y_pred_*.npy
-├── data/examples/          # Imágenes de ejemplo para visualización
-├── reports/                # Reportes y gráficos (curvas, confusión)
-├── docs/                   # Imágenes de documentación (README)
-└── README.md               # Documentación del proyecto
+📦 App_Diagnostico_Enfermades_Papa/
+	app.py                  # Aplicación principal Streamlit
+	models/                 # Modelos .h5 entrenados
+		best_potato_model.h5
+		potatocnn_model.h5
+		resnet50_model.h5
+	data/                   # Datos de prueba y predicciones .npy
+		X_test.npy
+		y_test.npy
+		y_pred_*.npy
+		data/examples/          # Imágenes de ejemplo para visualización
+	reports/                # Reportes y gráficos (curvas, confusión)
+	docs/                   # Imágenes de documentación (README)
+		README.md               # Documentación del proyecto
 
