@@ -34,19 +34,26 @@ Métricas: F1-Score, Especificidad, Sensibilidad, MCC
 
 PDF: pdfkit + wkhtmltopdf
 
-📁 Estructura del Proyecto
-📦 App_Diagnostico_Enfermades_Papa/
-	app.py                  # Aplicación principal Streamlit
-	models/                 # Modelos .h5 entrenados
-		best_potato_model.h5
-		potatocnn_model.h5
-		resnet50_model.h5
-	data/                   # Datos de prueba y predicciones .npy
-		X_test.npy
-		y_test.npy
-		y_pred_*.npy
-		data/examples/          # Imágenes de ejemplo para visualización
-	reports/                # Reportes y gráficos (curvas, confusión)
-	docs/                   # Imágenes de documentación (README)
-		README.md               # Documentación del proyecto
+📄 Reporte PDF
+La app permite exportar un reporte en PDF que incluye:
+
+Tabla de métricas de rendimiento
+
+Pruebas estadísticas (McNemar)
+
+Gráficos de matrices de confusión
+
+Visualizaciones de calor y diagnóstico
+
+🔍 Dataset
+Se utilizó una versión personalizada del dataset de papa del proyecto PlantVillage:
+
+3 clases: sano, tizón temprano y tizón tardío
+
+3000+ imágenes balanceadas
+
+Imágenes redimensionadas y segmentadas en HSV para mejorar detección
+
+
+
 
